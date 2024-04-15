@@ -25,6 +25,7 @@ Mitte März 2024 habe ich mich mit Alpha-Matting im Rahmen meiner Bachelorarbeit
 
   - KNN
     - findet im Allgemeinen heraus welche die k nähsten Daten eines Datenpunktes sind und berechnet anhand dessen aus zur welcher Kategorie der Datenpunkt gehört. In diesem Kontext wird viel eher herausgefunden welche die nähsten Nachbarn eines Pixel sind. (Die nähsten sind diese welche am ähnlichsten aussehen und auch lokal nah sind) 
+  
       ![image](https://github.com/IliasIhadian/KNN-Matting/assets/74773501/90f6334a-c1a0-413c-bfbd-110582ad8ab7)
 
 
@@ -50,6 +51,7 @@ $$W$$ ist eine "Weight"matrix, welche bei einem durchgang von KNN anzeigt wie of
     5. damit bauen wir dann die weight-matrix
     6. L = I - W, wobei I = scipy.sparse.identity(n)
 3. diese formel anwenden
+
    ![image](https://github.com/IliasIhadian/KNN-Matting/assets/74773501/521b601a-3b85-499f-9f9a-2e7b1f3d02e7)
 5. alpha werte ausgeben
 6. Vordergrund als Bild abgespeichert und ausgegeben
